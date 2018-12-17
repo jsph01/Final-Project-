@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Main Page</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/styles.css" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="layout.css" type="text/css">
+
+	  <style>
+		.sw-DropdownArrow{
+			width: 10px; 
+			height: 10px; 
+		}
+		#topgap{
+			padding-top: 90px; 
+		}
+		.adMessage{
+			width: 80%;
+			padding-bottom: 10px;
+			padding-left: 40px; 
+			font-size: 18px;		
+			padding-top: 10px; 
+		}
+		#logo3{
+			position: absolute;
+				float: left;
+				width: 35%;
+				height: 120px; 
+				top: 10px; 
+				left: 10px; 
+		}
+		.container-fluid{; 
+			    background-color: #fffff0;
+				height: 500px; 
+		} 
+		#image1{
+				float: left;
+				position: absolute; 
+				top: 175px;
+				right: 420px; 
+				width: 40% !important;
+				height: 200px !important; 
+				
+		}
+		#image2{
+				float: right;
+				position: absolute;
+				right: 150px; 
+				width: 37% !important;
+				height: 382px !important; 
+				padding-top: 45px;
+		}
+		#cart{
+			width: 50px;
+			height: 50px;
+		}
+		#cartpadding{
+			width: 25px;
+			padding-left: 25px;
+		}
+		#design{
+		font-weight: bold;
+		font-size: 1.5em;
+		padding-top: 15px;
+		padding-right: 15px;
+		}
+		#customerCare{
+			padding-top: 10px;
+			font-size: 80%;
+			padding-left: 20px;
+		}
+		#navButtons{
+			
+			padding-bottom: 75px; 
+		}
+		button.btn-primary{
+			background-color: white;
+			color: black;
+			border-color: black;
+		}
+		#buttonContainer{
+			width: 100%;
+			margin: 0 auto;
+			padding-left: 15%;
+		}
+		#navButtons{
+			width: 100%;
+			margin: 0 auto;
+		}
+		#pageContainer{
+			width: 96%;
+			margin: 0 auto;
+		}
+		#personalize{
+			width: 60%;
+			padding-bottom: 30px;
+		}
+		#image1{
+			padding-left: 50px;
+			width: 50%;
+			height: 120px;
+			background-color: white;
+			
+		}
+		.col-sm-5{
+			
+		}
+		
+		#figure1{
+			padding-left: 30px;
+			width: 80%;
+			
+		}
+		#figure2{
+			padding-left: 50px;
+			padding-top: 30px;
+			height: 400px;
+			width: 80%;
+		}
+		#image2{
+			width: 70%;
+			height:240px;
+			background-color: white;
+			
+		}
+		#imgContainer{
+			padding-top: 60px;
+		}
+		
+		/* Extra small devices (phones, 600px and down) */
+	@media only screen and (max-width: 600px) 
+	{
+		#navButtons{
+			width: 100%;
+			padding-top: 25px;
+		}
+		#personalize{
+			width: 90%;
+			padding-top:80px;
+			padding-bottom: 30px;
+			padding-left: 20%;
+		}
+		#buttonContainer{
+			width: 100%;
+			position: absolute;
+			left: 2px;
+			display: block !important;
+			padding-left: 0;
+			}
+		
+		button.btn-primary{
+			background-color: white;
+			color: black;
+			border-color: black;
+			width: 60px !important;
+			font-size: 60%;	
+		}
+		#figure1{
+			padding-left: 30%;
+			width: 100%;	
+		}
+		#figure2{
+			padding-left: 25%;
+			padding-top: 30px;
+			height: 400px;
+			width: 90%;
+		.col-sm-5{
+			padding-top: 80px;
+		}
+		#logo1{
+			width: 100px;
+		}
+	} 
+
+	/* Small devices (portrait tablets and large phones, 600px and up) */
+	@media only screen and (min-width: 600px) and (max-width:768px) {
+		#navButtons{
+			width: 100%;
+			padding-top: 25px;
+		}
+		#personalize{
+			width: 90%;
+			padding-top:80px;
+			padding-bottom: 30px;
+			padding-left: 20%;
+		}
+		#buttonContainer{
+			width: 100%;
+			position: absolute;
+			left: 10%;
+			display: block
+			}
+		
+		button.btn-primary{
+			background-color: white;
+			color: black;
+			border-color: black;
+			width: 100%;
+			font-size: 80%;	
+		}
+		#figure1{
+			padding-left: 30%;
+			width: 100%;	
+		}
+		#figure2{
+			padding-left: 25%;
+			padding-top: 30px;
+			height: 400px;
+			width: 90%;
+		.col-sm-5{
+			padding-top: 80px;
+		}
+	} 
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) and (max-width:992px) 
+{
+	#navButtons{
+			width: 100%;
+			padding-top: 25px;
+		}
+		#personalize{
+			width: 90%;
+			padding-top:80px;
+			padding-bottom: 30px;
+			padding-left: 20%;
+		}
+		#buttonContainer{
+			width: 100%;
+			position: absolute;
+			left: 10%;
+			display: block
+			}
+		
+		button.btn-primary{
+			background-color: white;
+			color: black;
+			border-color: black;
+			width: 100%;
+			font-size: 80%;	
+		}
+		#figure1{
+			padding-left: 30%;
+			width: 100%;	
+		}
+		#figure2{
+			padding-left: 25%;
+			padding-top: 30px;
+			height: 400px;
+			width: 90%;
+		.col-sm-5{
+			padding-top: 80px;
+		}
+}	
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) and (max-width:1200px) {
+	#navButtons{
+			width: 100%;
+			padding-top: 25px;
+		}
+		#personalize{
+			width: 90%;
+			padding-top:80px;
+			padding-bottom: 30px;
+			padding-left: 20%;
+		}
+		#buttonContainer{
+			width: 100%;
+			position: absolute;
+			left: 10%;
+			display: block;
+			}
+		
+		button.btn-primary{
+			background-color: white;
+			color: black;
+			border-color: black;
+			width: 50%;
+			font-size: 80%;	
+		}
+		#figure1{
+			padding-left: 30%;
+			width: 100%;	
+		}
+		#figure2{
+			padding-left: 25%;
+			padding-top: 30px;
+			height: 400px;
+			width: 90%;
+		.col-sm-5{
+			padding-top: 80px;
+		}
+} 
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+	#navButtons{
+			width: 100%;
+			padding-top: 25px;
+		}
+		#personalize{
+			width: 90%;
+			padding-top:80px;
+			padding-bottom: 30px;
+			padding-left: 20%;
+		}
+		#buttonContainer{
+			width: 100%;
+			position: absolute;
+			left: 10%;
+			display: block;
+			}
+		
+		button.btn-primary{
+			background-color: white;
+			color: black;
+			border-color: black;
+			width: 50%;
+			font-size: 80%;	
+		}
+		#figure1{
+			padding-left: 30%;
+			width: 100%;	
+		}
+		#figure2{
+			padding-left: 25%;
+			padding-top: 30px;
+			height: 400px;
+			width: 90%;
+		.col-sm-5{
+			padding-top: 80px;
+		}
+
+}
+
+	  </style>
+</head>
+<body>
+
+<div id="pageContainer">
+<div class="row">
+	<div class="col-sm-4 col-xs-3"><a href="index.html"><img id="logo3" src="logo3.jpg" alt="Logo"></img></a></div>
+	<div class="col-sm-4 col-xs-2" id="design"></div>
+	<div class="col-sm-4 col-xs-7 contact" id="customerCare">Customer Care 1-888-121-5612<span id="cartpadding"></span></div>
+</div>
+<div class="row" id="navButtons">
+	
+	
+</div>
+
+<div class="container-fluid">
+<div id="buttonContainer">
+		<div class="col-md-9 col-xs-9">
+		<div class="col-md-2 col-xs-2"></div>
+		<div class="col-md-2 col-xs-2"><a href="Product.html">PRODUCTS</a></div>
+		<div class="col-md-2 col-xs-2"><a href="Designs.html">DESIGNS</a></div>
+		<div class="col-md-2 col-xs-2"><a href="Personalize It.html">CUSTOMIZE</a></div>
+		<div class="col-md-4 col-xs-4">
+			<div class="dropdown">
+				   <a href="Help Center.html" class= "dropdown-toggle" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">HELP CENTER</a>	
+					<img class="sw-DropdownArrow" src="images/Dropdown.png" alt="arrow">
+				  <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+					 <a href="HelpCenter.html" class="dropdown-item">Services</a>
+				  </div>
+		    </div>		
+		</div>
+		<div class="col-md-2 col-xs-2"></div>
+		</div>
+	</div>
+  <div id="imgContainer"class="row">
+    <div class="col-sm-5 col-xs-12">
+	<p id="topgap" class="adMessage">Create your custom t-shirt for any occassion!</p>
+	<p class="adMessage">100% Creative freedom</p>
+	<p class="adMessage">Free Delivery for 5+ items</p>
+	
+	
+	<p id="freedelivery" class='freeDelivery'></p>
+	</div>
+    <div class="col-sm-7 col-xs-12">
+	<figure id="figure1" ><img id="image1" src="i_1212.jpg"></figure
+	<figure id="figure2" ><img id="image2" src="i_111.jpg"></figure>
+	</div>
+	</div>
+	
+  </div>
+</div>
+
+</body>
+  
+
+</body>
+</html>
+

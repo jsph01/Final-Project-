@@ -1,0 +1,45 @@
+<html><title></title>
+<head>
+<script>
+
+//Generic functions:
+var people = [{personId: 1, lastName: 'Smith', firstName: 'John'}, {personId: 2, lastName: 'Doe', firstName: 'Jane'}];
+var portfolio =[
+	{personId:1, portfolio: [{id:1, title:'Born in the USA'},{id:2, title:'Happy Days'}]},
+	 	{personId:2, portfolio: [{id:3, title:'Surfing USA'},{id:4, title:'Born in the USA'}]}
+];
+function getPerson(personId)
+{
+/* Returns information about a person in json format.
+ex: {personId: 1, lastName: ‘Smith’, firstName: ‘John’} */
+/* could be artist, musician, etc.*/
+       return people[personId];
+}
+function getPorfolio(peronsId)
+{
+	return portfolio[peronsId].portfolio;
+}
+function testIt (id)
+{
+	var pid = prompt ("Enter Person ID: ");
+	--pid;
+	if (id===1)
+	{
+		var p = getPerson(pid);
+		alert(p.lastName);
+	}
+	else {
+		var pid2 = prompt ("Enter Porfolio ID: ");
+		--pid2;
+		var p2=getPorfolio(pid);
+		alert(p2[pid2].title);
+	}
+}
+</script>
+</head>
+<body>
+<input type='button' value='Person' onclick='testIt(1)'/>
+<input type='button' value='Portfolio' onclick='testIt(2)'/>
+
+</body>
+</html>

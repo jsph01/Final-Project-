@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Week 5 Layout</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/styles.css" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="layout.css" type="text/css">
+<script>
+ function UploadPic_Callback(msg)
+ {
+	alert("CB: "+msg);
+	$("#hiddenImage").attr('src',msg);
+ }
+ var imageName="";
+ function uploadSubmit(frm)
+ {
+	var t = (frm.MyFile.value).split("\\");
+	var l = t.length-1;
+	
+	//hiddenImage
+ }
+</script>
+	  <style>
+	  #hiddenImage{
+		width: 70px;
+		height: 70px; 
+		position: absolute;
+		left: 145px; 
+		top: 70px; 
+	  }
+	  .testBtn{
+		float: left;
+	  }
+	  .personalizeBtn{
+		display: inline;
+		width: 100%;
+	  }
+	  .button{
+		padding-left: 60px; 
+		padding-top: 20px; 
+	  }
+	  .col-md-2{
+		padding: 10px 10px; 
+	  }
+	  .colors{
+			width: 40px !important;
+			height: 30px !important;
+	  }
+	  .sw-DropdownArrow{
+			width: 10px; 
+			height: 10px; 
+		}
+		#logo3{
+			position: absolute;
+				float: left;
+				width: 35%;
+				height: 120px; 
+				top: 10px; 
+				left: 10px; 
+		}
+		button.white{
+			background-color: white !important;
+			width: 10px;
+			height: 10px;
+		}
+		button.a2{
+			background-color: #f0e6a8 !important;
+			width: 10px;
+			height: 10px;
+		}
+		button.a3{
+			background-color: #fc8f3c !important;
+			width: 10px;
+			height: 10px;
+		}
+		button.a4{
+			background-color: #e1b06d !important;
+			width: 10px;
+			height: 10px;
+		}
+		button.a5{
+			background-color: #222953 !important;
+			width: 10px;
+			height: 10px;
+		}
+		button.a6{
+			background-color: #fc8f3c !important;
+			width: 10px;
+			height: 10px;
+		}
+		button.a2{
+			background-color: #f0e6a8 !important;
+			width: 10px;
+			height: 10px;
+		}
+		button.a3{
+			background-color: #fc8f3c !important;
+			width: 10px;
+			height: 10px;
+		}
+		button.a4{
+			background-color: #e1b06d !important;
+			width: 10px;
+			height: 10px;
+		}
+		button.a5{
+			background-color: #222953 !important;
+			width: 10px;
+			height: 10px;
+		}
+		button.a6{
+			background-color: #F4E4C3 !important;
+			width: 10px;
+			height: 10px;
+		}
+		button.a7{
+			background-color: #8EBF87 !important;
+			width: 10px;
+			height: 10px;
+		}
+		button.a8{
+			background-color: #443E74 !important;
+			width: 10px;
+			height: 10px;
+		}
+		button.a9{
+			background-color: #89363C !important;
+			width: 10px;
+			height: 10px;
+		}
+		button.a10{
+			background-color: #C1FF6E !important;
+			width: 10px;
+			height: 10px;
+		}
+		button.a11{
+			background-color: #2466AE !important;
+			width: 10px;
+			height: 10px;
+		}
+		button.a12{
+			background-color: #82AFCF !important;
+			width: 10px;
+			height: 10px;
+		}
+		button.a13{
+			background-color: #B8B7B5 !important;
+			width: 10px;
+			height: 10px;
+		}
+		button.a14{
+			background-color: #D05644 !important;
+			width: 10px;
+			height: 10px;
+		}
+		button.a15{
+			background-color: #E1405A !important;
+			width: 10px;
+			height: 10px;
+		}
+		#cart{
+			width: 50px; 
+			height: 50px;
+		}
+		#cartpadding{
+			width: 25px;
+			padding-left: 25px;
+		}
+		#design{
+		font-weight: bold;
+		font-size: 1.5em;
+		padding-top: 15px;
+		padding-right: 15px;
+		}
+		#customerCare{
+			padding-top: 10px;
+			font-size: 80%;
+			padding-left: 20px;
+		}
+		#navButtons{
+			padding-top: 25px;
+		}
+		button.btn-primary{
+			background-color: white;
+			color: black;
+			border-color: black;
+		}
+		#buttonContainer{
+			width: 100%;
+			margin: 0 auto;
+			padding-left: 15%;
+		}
+		#navButtons{
+			width: 100%;
+			margin: 0 auto;
+		}
+		#pageContainer{
+			width: 96%;
+			margin: 0 auto;
+		}
+		#personalize{
+			width: 60%;
+			padding-bottom: 30px;
+		}
+		#image1{
+			padding-left: 50px;
+			width: 50%;
+			height: 120px;
+			background-color: white;
+			border: 1px solid black;
+		}
+		.col-sm-5{
+			
+		}
+		.col-md-3{
+			text-align: center:
+		}
+		#figure1{
+			padding-left: 30px;
+			width: 80%;
+			
+		}
+		#figure2{
+			padding-left: 50px;
+			padding-top: 30px;
+			height: 400px;
+			width: 80%;
+		}
+		#image2{
+			width: 70%;
+			height:240px;
+			background-color: white;
+			border: 1px solid black;
+		}
+		#imgContainer{
+			padding-top: 60px;
+		}
+		#container{
+		    padding-top: 100px;
+			}
+		.Products{
+			width: 200px; 
+			height: 200px;
+			border: 1px solid blue;
+			background-color: red;
+		}
+		.Shirts{
+			width: 300px;
+			height: 300px;
+		}
+		.Personalize{
+			width: 500px;
+			height: 300px;
+			border: 1px solid blue;
+			clear: both;
+		}
+		.Cart{
+			width: 450px;
+			height: 200px;
+			border: 1px solid blue;
+			background-color: red;
+		}
+		#spacer {
+			height: 50px;
+		}
+		#newspacer {
+			height: 50px;
+		}
+		#deck {
+			height: 50px;
+		}
+		
+		/* Extra small devices (phones, 600px and down) */
+	@media only screen and (max-width: 600px) 
+	{
+		#navButtons{
+			width: 100%;
+			padding-top: 25px;
+		}
+		#personalize{
+			width: 90%;
+			padding-top:80px;
+			padding-bottom: 30px;
+			padding-left: 20%;
+		}
+		#buttonContainer{
+			width: 100%;
+			position: absolute;
+			left: 2px;
+			display: block !important;
+			padding-left: 0;
+			}
+		
+		button.btn-primary{
+			background-color: white;
+			color: black;
+			border-color: black;
+			width: 60px !important;
+			font-size: 60%;	
+		}
+		#figure1{
+			padding-left: 30%;
+			width: 100%;	
+		}
+		#figure2{
+			padding-left: 25%;
+			padding-top: 30px;
+			height: 400px;
+			width: 90%;
+		.col-sm-5{
+			padding-top: 80px;
+		}
+		#logo1{
+			width: 100px;
+		}
+	} 
+
+	/* Small devices (portrait tablets and large phones, 600px and up) */
+	@media only screen and (min-width: 600px) and (max-width:768px) {
+		#navButtons{
+			width: 100%;
+			padding-top: 25px;
+		}
+		#personalize{
+			width: 90%;
+			padding-top:80px;
+			padding-bottom: 30px;
+			padding-left: 20%;
+		}
+		#buttonContainer{
+			width: 100%;
+			position: absolute;
+			left: 10%;
+			display: block
+			}
+		
+		button.btn-primary{
+			background-color: white;
+			color: black;
+			border-color: black;
+			width: 100%;
+			font-size: 80%;	
+		}
+		#figure1{
+			padding-left: 30%;
+			width: 100%;	
+		}
+		#figure2{
+			padding-left: 25%;
+			padding-top: 30px;
+			height: 400px;
+			width: 90%;
+		.col-sm-5{
+			padding-top: 80px;
+		}
+	} 
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) and (max-width:992px) 
+{
+	#navButtons{
+			width: 100%;
+			padding-top: 25px;
+		}
+		#personalize{
+			width: 90%;
+			padding-top:80px;
+			padding-bottom: 30px;
+			padding-left: 20%;
+		}
+		#buttonContainer{
+			width: 100%;
+			position: absolute;
+			left: 10%;
+			display: block
+			}
+		
+		button.btn-primary{
+			background-color: white;
+			color: black;
+			border-color: black;
+			width: 100%;
+			font-size: 80%;	
+		}
+		#figure1{
+			padding-left: 30%;
+			width: 100%;	
+		}
+		#figure2{
+			padding-left: 25%;
+			padding-top: 30px;
+			height: 400px;
+			width: 90%;
+		.col-sm-5{
+			padding-top: 80px;
+		}
+}	
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) and (max-width:1200px) {
+	#navButtons{
+			width: 100%;
+			padding-top: 25px;
+		}
+		#personalize{
+			width: 90%;
+			padding-top:80px;
+			padding-bottom: 30px;
+			padding-left: 20%;
+		}
+		#buttonContainer{
+			width: 100%;
+			position: absolute;
+			left: 10%;
+			display: block;
+			}
+		
+		button.btn-primary{
+			background-color: white;
+			color: black;
+			border-color: black;
+			width: 50%;
+			font-size: 80%;	
+		}
+		#figure1{
+			padding-left: 30%;
+			width: 100%;	
+		}
+		#figure2{
+			padding-left: 25%;
+			padding-top: 30px;
+			height: 400px;
+			width: 90%;
+		.col-sm-5{
+			padding-top: 80px;
+		}
+} 
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+	#navButtons{
+			width: 100%;
+			padding-top: 25px;
+		}
+		#personalize{
+			width: 90%;
+			padding-top:80px;
+			padding-bottom: 30px;
+			padding-left: 20%;
+		}
+		#buttonContainer{
+			width: 100%;
+			position: absolute;
+			left: 10%;
+			display: block;
+			}
+		
+		button.btn-primary{
+			background-color: white;
+			color: black;
+			border-color: black;
+			width: 50%;
+			font-size: 80%;	
+		}
+		#figure1{
+			padding-left: 30%;
+			width: 100%;	
+		}
+		#figure2{
+			padding-left: 25%;
+			padding-top: 30px;
+			height: 400px;
+			width: 90%;
+		.col-sm-5{
+			padding-top: 80px;
+		}
+
+}
+
+	  </style>
+</head>
+<body>
+
+<div id="pageContainer">
+<div class="row">
+	<div class="col-sm-4 col-xs-3"><a href="index.html"><img id="logo3" src="logo3.jpg" alt="Logo"></img></a></div>
+	<div class="col-sm-4 col-xs-2" id="design"></div>
+	<div class="col-sm-4 col-xs-7 contact" id="customerCare">Customer Care 1-888-121-5612<span id="cartpadding"></span><img id="cart" src="Cartpage_3.png">Cart</div>
+</div>
+<div class="row" id="navButtons">
+	<div id="buttonContainer">
+		<div class="col-md-12 col-xs-12">
+		<div class="col-md-2 col-xs-2"></div>
+		<div class="col-md-2 col-xs-2"><a href="Product.html">PRODUCTS</a></div>
+		<div class="col-md-2 col-xs-2"><a href="Designs.html">DESIGNS</a></div>
+		<div class="col-md-2 col-xs-2"><a href="Personalize It.html">CUSTOMIZE</a></div>
+		<div class="col-md-2 col-xs-2">
+				   <div class="dropdown">
+				   <a href="Help Center.html" class= "dropdown-toggle" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">HELP CENTER</a>	
+					<img class="sw-DropdownArrow" src="images/Dropdown.png" alt="arrow">
+				  <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+					 <a href="HelpCenter.html" class="dropdown-item"> Services</a>
+				  </div>
+		    </div>		
+		</div>
+		<div class="col-md-2 col-xs-2"></div>
+		</div>
+	</div>
+	</div>
+	
+</div>
+<div id="container">
+<div id="heading"></div>
+<div class="row">
+	<div class="col-md-4">
+	
+        <figure class="Shirts">
+			<img id="shirts" class="Shirts" src="images/t_shirt.jpg" alt="plain shirt">
+			<img id="hiddenImage" src="Capture.jpg" alt="my Image">
+			<span id='hiddenText'><span>
+        </figure> 
+	</div>
+	<div class="col-md-8">
+		<div class="personalizeBtn">
+		<button type="button" class="testBtn btn btn-primary">Color</button>
+		<form id='postForm' action="uploadToDB.php"
+    method="post" enctype="multipart/form-data" target='hiddenFrame' onsubmit='uploadSubmit(this)'> 
+		<input type="file" id="MyFile" name='file1' class="testBtn" multiple onclick="getImageName()">
+		<input type='submit' value='upload' />
+		</form>
+		<button type="button" class="testBtn btn btn-primary">Save</button>
+		</div>
+        <figure class="Personalize">
+		<div class="row button">
+			<div class="col-md-2"><button type="button" class="btn btn-primary white colors" onclick="document.getElementById('shirts').src='images/t_shirt.jpg'"></button></div>
+			<div class="col-md-2"><button type="button" class="btn btn-primary a2 colors" onclick="document.getElementById('shirts').src='images/t_shirt_color_2.jpg'"></button></div>	
+			<div class="col-md-2"><button type="button" class="btn btn-primary a3 colors" onclick="document.getElementById('shirts').src='images/t_shirt_color_3.jpg'"></button></div>	
+			<div class="col-md-2"><button type="button" class="btn btn-primary a4 colors" onclick="document.getElementById('shirts').src='images/t_shirt_color_4.jpg'"></button></div>	
+			<div class="col-md-2"><button type="button" class="btn btn-primary a5 colors" onclick="document.getElementById('shirts').src='images/t_shirt_color_5.jpg'"></button></div>
+		</div>
+		<div class="row button">
+			<div class="col-md-2"><button type="button" class="btn btn-primary a6 colors" onclick="document.getElementById('shirts').src='images/t_shirt_color_6.jpg'"></button></div>	
+			<div class="col-md-2"><button type="button" class="btn btn-primary a7 colors" onclick="document.getElementById('shirts').src='images/t_shirt_color_7.jpg'"></button></div>	
+			<div class="col-md-2"><button type="button" class="btn btn-primary a8 colors" onclick="document.getElementById('shirts').src='images/t_shirt_color_8.jpg'"></button></div>	
+			<div class="col-md-2"><button type="button" class="btn btn-primary a9 colors" onclick="document.getElementById('shirts').src='images/t_shirt_color_9.jpg'"></button></div>	
+			<div class="col-md-2"><button type="button" class="btn btn-primary a10 colors" onclick="document.getElementById('shirts').src='images/t_shirt_color_10.jpg'"></button></div>
+		</div>
+		<div class="row button">
+			<div class="col-md-2"><button type="button" class="btn btn-primary a11 colors" onclick="document.getElementById('shirts').src='images/t_shirt_color_11.jpg'"></button></div>	
+			<div class="col-md-2"><button type="button" class="btn btn-primary a12 colors" onclick="document.getElementById('shirts').src='images/t_shirt_color_12.jpg'"></button></div>	
+			<div class="col-md-2"><button type="button" class="btn btn-primary a13 colors" onclick="document.getElementById('shirts').src='images/t_shirt_color_13.jpg'"></button></div>	
+			<div class="col-md-2"><button type="button" class="btn btn-primary a14 colors" onclick="document.getElementById('shirts').src='images/t_shirt_color_14.jpg'"></button></div>	
+			<div class="col-md-2"><button type="button" class="btn btn-primary a15 colors" onclick="document.getElementById('shirts').src='images/t_shirt_color_15.jpg'"></button></div>
+		</div>
+        </figure> 		
+	</div>
+	   
+	
+</div>
+
+
+
+</div>
+
+<script src="script.js"></script>
+</body>
+    <iframe src="about:blank" name="hiddenFrame" width=0 height=0 frameborder=0></iframe>
+
+</html>

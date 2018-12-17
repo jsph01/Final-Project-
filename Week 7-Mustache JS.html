@@ -1,0 +1,25 @@
+<html lang="en">
+  <head>
+    <title>Week 7 Assignment</title>
+	<h3 id='h3Content'></h3>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/3.0.1/mustache.js" ></script>
+    <script>
+      var view = {
+        name : "Joseph",
+        occupation : "Student Web Developer",
+		h1Title : "Developed by Joseph Lister"
+      };
+	  
+      function loadtemp(){
+        var output = Mustache.render("{{name}} is a  {{occupation}}", view);
+        var h3Temp = Mustache.render("{{h1Title}}", view);
+
+        document.getElementById('person').innerHTML = output;
+        document.getElementById('h3Content').innerHTML = h3Temp;
+      }
+    </script>
+  </head>
+  <body onload="loadtemp()" >
+    <p id="person"></p>
+  </body>
+</html>

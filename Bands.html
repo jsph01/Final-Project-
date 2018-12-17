@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bands</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/styles.css" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="layout.css" type="text/css">
+
+	  <style>
+	  .sw-DropdownArrow{
+			width: 10px; 
+			height: 10px; 
+		}
+		#logo3{
+			position: absolute;
+				float: left;
+				width: 35%;
+				height: 120px; 
+				top: 10px; 
+				left: 10px; 
+		}
+		#cart{
+			width: 50px;
+			height: 50px;
+		}
+		#cartpadding{
+			width: 25px;
+			padding-left: 25px;
+		}
+		#design{
+		font-weight: bold;
+		font-size: 1.5em;
+		padding-top: 15px;
+		padding-right: 15px;
+		}
+		#customerCare{
+			padding-top: 10px;
+			font-size: 80%;
+			padding-left: 20px;
+		}
+		#navButtons{
+			padding-top: 25px;
+		}
+		button.btn-primary{
+			background-color: white;
+			color: black;
+			border-color: black;
+		}
+		#buttonContainer{
+			width: 100%;
+			margin: 0 auto;
+			padding-left: 15%;
+		}
+		#navButtons{
+			width: 100%;
+			margin: 0 auto;
+		}
+		#pageContainer{
+			width: 96%;
+			margin: 0 auto;
+		}
+		#personalize{
+			width: 60%;
+			padding-bottom: 30px;
+		}
+		#image1{
+			padding-left: 50px;
+			width: 50%;
+			height: 120px;
+			background-color: white;
+			border: 1px solid black;
+		}
+		.col-sm-5{
+			
+		}
+		.col-md-3{
+			text-align: center:
+		}
+		#figure1{
+			padding-left: 30px;
+			width: 80%;
+			
+		}
+		#figure2{
+			padding-left: 50px;
+			padding-top: 30px;
+			height: 400px;
+			width: 80%;
+		}
+		#image2{
+			width: 70%;
+			height:240px;
+			background-color: white;
+			border: 1px solid black;
+		}
+		#imgContainer{
+			padding-top: 60px;
+		}
+		#container{
+		    padding-top: 100px;
+			}
+		.Products{
+			width: 200px; 
+			height: 200px;
+		}
+		#spacer {
+			height: 50px;
+		}
+		#newspacer {
+			height: 50px;
+		}
+		#deck {
+			height: 50px;
+		}
+		
+		/* Extra small devices (phones, 600px and down) */
+	@media only screen and (max-width: 600px) 
+	{
+		#navButtons{
+			width: 100%;
+			padding-top: 25px;
+		}
+		#personalize{
+			width: 90%;
+			padding-top:80px;
+			padding-bottom: 30px;
+			padding-left: 20%;
+		}
+		#buttonContainer{
+			width: 100%;
+			position: absolute;
+			left: 2px;
+			display: block !important;
+			padding-left: 0;
+			}
+		
+		button.btn-primary{
+			background-color: white;
+			color: black;
+			border-color: black;
+			width: 60px !important;
+			font-size: 60%;	
+		}
+		#figure1{
+			padding-left: 30%;
+			width: 100%;	
+		}
+		#figure2{
+			padding-left: 25%;
+			padding-top: 30px;
+			height: 400px;
+			width: 90%;
+		.col-sm-5{
+			padding-top: 80px;
+		}
+		#logo1{
+			width: 100px;
+		}
+	} 
+
+	/* Small devices (portrait tablets and large phones, 600px and up) */
+	@media only screen and (min-width: 600px) and (max-width:768px) {
+		#navButtons{
+			width: 100%;
+			padding-top: 25px;
+		}
+		#personalize{
+			width: 90%;
+			padding-top:80px;
+			padding-bottom: 30px;
+			padding-left: 20%;
+		}
+		#buttonContainer{
+			width: 100%;
+			position: absolute;
+			left: 10%;
+			display: block
+			}
+		
+		button.btn-primary{
+			background-color: white;
+			color: black;
+			border-color: black;
+			width: 100%;
+			font-size: 80%;	
+		}
+		#figure1{
+			padding-left: 30%;
+			width: 100%;	
+		}
+		#figure2{
+			padding-left: 25%;
+			padding-top: 30px;
+			height: 400px;
+			width: 90%;
+		.col-sm-5{
+			padding-top: 80px;
+		}
+	} 
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) and (max-width:992px) 
+{
+	#navButtons{
+			width: 100%;
+			padding-top: 25px;
+		}
+		#personalize{
+			width: 90%;
+			padding-top:80px;
+			padding-bottom: 30px;
+			padding-left: 20%;
+		}
+		#buttonContainer{
+			width: 100%;
+			position: absolute;
+			left: 10%;
+			display: block
+			}
+		
+		button.btn-primary{
+			background-color: white;
+			color: black;
+			border-color: black;
+			width: 100%;
+			font-size: 80%;	
+		}
+		#figure1{
+			padding-left: 30%;
+			width: 100%;	
+		}
+		#figure2{
+			padding-left: 25%;
+			padding-top: 30px;
+			height: 400px;
+			width: 90%;
+		.col-sm-5{
+			padding-top: 80px;
+		}
+}	
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) and (max-width:1200px) {
+	#navButtons{
+			width: 100%;
+			padding-top: 25px;
+		}
+		#personalize{
+			width: 90%;
+			padding-top:80px;
+			padding-bottom: 30px;
+			padding-left: 20%;
+		}
+		#buttonContainer{
+			width: 100%;
+			position: absolute;
+			left: 10%;
+			display: block;
+			}
+		
+		button.btn-primary{
+			background-color: white;
+			color: black;
+			border-color: black;
+			width: 50%;
+			font-size: 80%;	
+		}
+		#figure1{
+			padding-left: 30%;
+			width: 100%;	
+		}
+		#figure2{
+			padding-left: 25%;
+			padding-top: 30px;
+			height: 400px;
+			width: 90%;
+		.col-sm-5{
+			padding-top: 80px;
+		}
+} 
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+	#navButtons{
+			width: 100%;
+			padding-top: 25px;
+		}
+		#personalize{
+			width: 90%;
+			padding-top:80px;
+			padding-bottom: 30px;
+			padding-left: 20%;
+		}
+		#buttonContainer{
+			width: 100%;
+			position: absolute;
+			left: 10%;
+			display: block;
+			}
+		
+		button.btn-primary{
+			background-color: white;
+			color: black;
+			border-color: black;
+			width: 50%;
+			font-size: 80%;	
+		}
+		#figure1{
+			padding-left: 30%;
+			width: 100%;	
+		}
+		#figure2{
+			padding-left: 25%;
+			padding-top: 30px;
+			height: 400px;
+			width: 90%;
+		.col-sm-5{
+			padding-top: 80px;
+		}
+
+}
+
+	  </style>
+</head>
+<body>
+
+<div id="pageContainer">
+<div class="row">
+	<div class="col-sm-4 col-xs-3"><a href="index.html"><img id="logo3" src="logo3.jpg" alt="Logo"></img></a></div>
+	<div class="col-sm-4 col-xs-2" id="design"></div>
+	<div class="col-sm-4 col-xs-7 contact" id="customerCare">Customer Care 1-888-121-5612<span id="cartpadding"></span><img id="cart" src="Cartpage_3.png">Cart</div>
+</div>
+<div class="row" id="navButtons">
+	<div id="buttonContainer">
+		<div class="col-md-12 col-xs-12">
+		<div class="col-md-2 col-xs-2"></div>
+		<div class="col-md-2 col-xs-2"><a href="Product.html">PRODUCTS</a></div>
+		<div class="col-md-2 col-xs-2"><a href="Designs.html">DESIGNS</a></div>
+		<div class="col-md-2 col-xs-2"><a href="Personalize It.html">CUSTOMIZE</a></div>
+		<div class="col-md-2 col-xs-2">
+			<div class="dropdown">
+				   <a href="Help Center.html" class= "dropdown-toggle" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">HELP CENTER</a>	
+					<img class="sw-DropdownArrow" src="images/Dropdown.png" alt="arrow">
+				  <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+					 <a href="HelpCenter.html" class="dropdown-item"> Services</a>
+				  </div>
+		    </div>		
+		</div>
+		<div class="col-md-2 col-xs-2"></div>
+		</div>
+	</div>
+	</div>
+	
+</div>
+<div id="container">
+<div class="row">
+	<div class="col-md-3">
+	
+	<div class="dropdown">
+  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Drop Menu
+  </button>
+  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+    <a class="dropdown-item" href="Men.html">Men</a><br>
+    <a class="dropdown-item" href="Women.html">Women</a><br>
+    <a class="dropdown-item" href="Kids.html">Kids</a><br>
+  </div>
+</div>
+
+
+	</div>
+	<div class="col-md-3">
+	T-shirts
+        <figure class="Products">
+			<img class="Products" src="images/tshirt_1.jpg" alt="tshirt">
+        </figure> 		
+	</div>
+	<div class="col-md-3"> 
+	Baseball Shirts
+	    <figure class="Products">
+			<img class="Products" src="images/baseball_4.jpg" alt="baseball shirt">	
+        </figure>
+	</div>   
+	<div class="col-md-3"> 
+	Tanks
+	   <figure class="Products"> 
+			<img class="Products" src="images/tank_3.jpg" alt="tank shirt">
+        </figure>
+	</div>
+</div>
+<div id="spacer" class="row">
+</div>
+<div class="row"> 
+	<div class="col-md-3">
+		
+	</div>
+	<div class="col-md-3">
+	Hoodies
+        <figure class="Products">
+			<img class="Products" src="images/hoodies_2.jpg" alt="hoodies">
+        </figure> 		
+	</div>
+	<div class="col-md-3"> 
+	Jackets
+	    <figure class="Products">
+			<img class="Products" src="images/jacket_5.jpg" alt ="jacket">
+        </figure>
+	</div>   
+	<div class="col-md-3"> 
+	Hats
+	   <figure class="Products">
+			<img class="Products" src="images/hats_5.jpg" alt ="hats">
+        </figure>
+	</div>
+</div>
+<div id= "newspacer" class="row">
+</div>
+<div class="row">
+	<div class="col-md-3">
+		
+	</div>
+	<div class="col-md-3">
+        	
+	</div>
+	<div class="col-md-3"> 
+	    
+	</div>   
+	<div class="col-md-3"> 
+	    
+	</div>
+</div>
+<div id="deck" class="row">
+</div>
+
+
+</div>
+
+</body>
+</html>

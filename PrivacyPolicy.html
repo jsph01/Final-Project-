@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Week 7 Layout</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/styles.css" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="layout.css" type="text/css">
+
+	  <style>
+	  #shippingrow{
+		padding: 0 50px;
+		width: 90%; 
+		margin: 0 auto; 
+	  }
+	  #Privacy{
+		font-size: 24px; 
+		text-align: center;
+		font-weight: bold; 
+	  }
+	  #Security{
+		font-size: 20px; 
+		text-align: center; 
+	  }
+	   #PrivacyPolicy{
+		font-size: 20px; 
+		text-align: center; 
+	  }
+	   #TermsofUse{
+		font-size: 20px; 
+		text-align: center;
+		}
+	  .sw-DropdownArrow{
+			width: 10px; 
+			height: 10px; 
+		}
+		#logo3{
+			position: absolute;
+				float: left;
+				width: 35%;
+				height: 120px; 
+				top: 10px; 
+				left: 10px; 
+		}
+		#design{
+		font-weight: bold;
+		font-size: 1.5em;
+		padding-top: 15px;
+		padding-right: 15px;
+		}
+		#customerCare{
+			padding-top: 10px;
+			font-size: 80%;
+			padding-left: 20px;
+		}
+		#navButtons{
+			padding-top: 25px;
+		}
+		button.btn-primary{
+			background-color: white;
+			color: black;
+			border-color: black;
+		}
+		#buttonContainer{
+			width: 100%;
+			margin: 0 auto;
+			padding-left: 15%;
+		}
+		#navButtons{
+			width: 100%;
+			margin: 0 auto;
+		}
+		#pageContainer{
+			width: 96%;
+			margin: 0 auto;
+		}
+		#personalize{
+			width: 60%;
+			padding-bottom: 30px;
+		}
+		#image1{
+			padding-left: 50px;
+			width: 50%;
+			height: 120px;
+			background-color: white;
+			border: 1px solid black;
+		}
+		.col-sm-5{
+			
+		}
+		.col-md-3{
+			text-align: center:
+		}
+		#figure1{
+			padding-left: 30px;
+			width: 80%;
+			
+		}
+		#figure2{
+			padding-left: 50px;
+			padding-top: 30px;
+			height: 400px;
+			width: 80%;
+		}
+		#image2{
+			width: 70%;
+			height:240px;
+			background-color: white;
+			border: 1px solid black;
+		}
+		#imgContainer{
+			padding-top: 60px;
+		}
+		#container{
+		    padding-top: 100px;
+			}
+		.Products{
+			width: 200px; 
+			height: 200px;
+			border: 1px solid blue;
+			background-color: red;
+		}
+		.Shirts{
+			width: 150px;
+			height: 200px;
+			border: 1px solid blue;
+			background-color: red;
+		}
+		.Personalize{
+			width: 330px;
+			height: 200px;
+			border: 1px solid blue;
+			background-color: red;
+		}
+		.ServicesImg{
+			width: 400px;
+			height: 200px;
+			border: 1px solid blue;
+			background-color: red;
+		}
+		.Cart{
+			width: 450px;
+			height: 200px;
+			border: 1px solid blue;
+			background-color: red;
+		}
+		#cart{
+			width: 50px;
+			height: 50px;
+		}
+		#cartpadding{
+			width: 25px;
+			padding-left: 25px;
+		}
+		.General{
+			font-size: 20px;
+				font-weight: bold;
+		}
+		#spacer {
+			height: 50px;
+		}
+		#newspacer {
+			height: 50px;
+		}
+		#deck {
+			height: 50px;
+		}
+		
+		/* Extra small devices (phones, 600px and down) */
+	@media only screen and (max-width: 600px) 
+	{
+		#navButtons{
+			width: 100%;
+			padding-top: 25px;
+		}
+		#personalize{
+			width: 90%;
+			padding-top:80px;
+			padding-bottom: 30px;
+			padding-left: 20%;
+		}
+		#buttonContainer{
+			width: 100%;
+			position: absolute;
+			left: 2px;
+			display: block !important;
+			padding-left: 0;
+			}
+		
+		button.btn-primary{
+			background-color: white;
+			color: black;
+			border-color: black;
+			width: 60px !important;
+			font-size: 60%;	
+		}
+		#figure1{
+			padding-left: 30%;
+			width: 100%;	
+		}
+		#figure2{
+			padding-left: 25%;
+			padding-top: 30px;
+			height: 400px;
+			width: 90%;
+		.col-sm-5{
+			padding-top: 80px;
+		}
+		#logo1{
+			width: 100px;
+		}
+	} 
+
+	/* Small devices (portrait tablets and large phones, 600px and up) */
+	@media only screen and (min-width: 600px) and (max-width:768px) {
+		#navButtons{
+			width: 100%;
+			padding-top: 25px;
+		}
+		#personalize{
+			width: 90%;
+			padding-top:80px;
+			padding-bottom: 30px;
+			padding-left: 20%;
+		}
+		#buttonContainer{
+			width: 100%;
+			position: absolute;
+			left: 10%;
+			display: block
+			}
+		
+		button.btn-primary{
+			background-color: white;
+			color: black;
+			border-color: black;
+			width: 100%;
+			font-size: 80%;	
+		}
+		#figure1{
+			padding-left: 30%;
+			width: 100%;	
+		}
+		#figure2{
+			padding-left: 25%;
+			padding-top: 30px;
+			height: 400px;
+			width: 90%;
+		.col-sm-5{
+			padding-top: 80px;
+		}
+	} 
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) and (max-width:992px) 
+{
+	#navButtons{
+			width: 100%;
+			padding-top: 25px;
+		}
+		#personalize{
+			width: 90%;
+			padding-top:80px;
+			padding-bottom: 30px;
+			padding-left: 20%;
+		}
+		#buttonContainer{
+			width: 100%;
+			position: absolute;
+			left: 10%;
+			display: block
+			}
+		
+		button.btn-primary{
+			background-color: white;
+			color: black;
+			border-color: black;
+			width: 100%;
+			font-size: 80%;	
+		}
+		#figure1{
+			padding-left: 30%;
+			width: 100%;	
+		}
+		#figure2{
+			padding-left: 25%;
+			padding-top: 30px;
+			height: 400px;
+			width: 90%;
+		.col-sm-5{
+			padding-top: 80px;
+		}
+}	
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) and (max-width:1200px) {
+	#navButtons{
+			width: 100%;
+			padding-top: 25px;
+		}
+		#personalize{
+			width: 90%;
+			padding-top:80px;
+			padding-bottom: 30px;
+			padding-left: 20%;
+		}
+		#buttonContainer{
+			width: 100%;
+			position: absolute;
+			left: 10%;
+			display: block;
+			}
+		
+		button.btn-primary{
+			background-color: white;
+			color: black;
+			border-color: black;
+			width: 50%;
+			font-size: 80%;	
+		}
+		#figure1{
+			padding-left: 30%;
+			width: 100%;	
+		}
+		#figure2{
+			padding-left: 25%;
+			padding-top: 30px;
+			height: 400px;
+			width: 90%;
+		.col-sm-5{
+			padding-top: 80px;
+		}
+} 
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+	#navButtons{
+			width: 100%;
+			padding-top: 25px;
+		}
+		#personalize{
+			width: 90%;
+			padding-top:80px;
+			padding-bottom: 30px;
+			padding-left: 20%;
+		}
+		#buttonContainer{
+			width: 100%;
+			position: absolute;
+			left: 10%;
+			display: block;
+			}
+		
+		button.btn-primary{
+			background-color: white;
+			color: black;
+			border-color: black;
+			width: 50%;
+			font-size: 80%;	
+		}
+		#figure1{
+			padding-left: 30%;
+			width: 100%;	
+		}
+		#figure2{
+			padding-left: 25%;
+			padding-top: 30px;
+			height: 400px;
+			width: 90%;
+		.col-sm-5{
+			padding-top: 80px;
+		}
+
+}  
+
+	  </style>
+</head> 
+<body>
+
+<div id="pageContainer">
+<div class="row">
+	<div class="col-sm-4 col-xs-3"><a href="index.html"><img id="logo3" src="logo3.jpg" alt="Logo"></img></a></div>
+	<div class="col-sm-4 col-xs-2" id="design"></div>
+	<div class="col-sm-4 col-xs-7 contact" id="customerCare">Customer Care 1-888-121-5612<span id="cartpadding"></span><img id="cart" src="Cartpage_3.png">Cart</div>
+</div>
+<div class="row" id="navButtons">
+	<div id="buttonContainer">
+		<div class="col-md-12 col-xs-12">
+		<div class="col-md-2 col-xs-2"></div>
+		<div class="col-md-2 col-xs-2"><a href="Product.html">PRODUCTS</a></div>
+		<div class="col-md-2 col-xs-2"><a href="Designs.html">DESIGNS</a></div>
+		<div class="col-md-2 col-xs-2"><a href="Personalize It.html">CUSTOMIZE</a></div>
+		<div class="col-md-2 col-xs-2">
+			<div class="dropdown">
+				   <a href="Help Center.html" class= "dropdown-toggle" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">HELP CENTER</a>	
+					<img class="sw-DropdownArrow" src="images/Dropdown.png" alt="arrow">
+				  <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+					 <a href="HelpCenter.html" class="dropdown-item"> Services</a>
+				  </div>
+		    </div>		
+		</div>
+		<div class="col-md-2 col-xs-2"></div>
+		</div>
+	</div>
+	</div>
+	
+	 
+</div>
+<div id="container">
+	<div id="shippingrow" class="row">
+		              				<h1 id="Privacy">Privacy</h1><br><br>
+
+					<h2 id="Security">Security</h2> 
+<p>Tee Prints uses Secure Sockets Layer (SSL) technology to safely protect the security of your personal information during transmission. All payment information you submit to us is processed immediately by Braintree, a leading provider in e-commerce security solutions. We do not store or retain your credit card information on our server or databases.</p>
+<p>If you use this site, you are responsible for maintaining the confidentiality of any account passwords and for restricting access to your computer. You are also responsible for making sure your browser is compatable with 128-bit SSL.</p>
+<p>You must be over 18 years of age to purchase products on Tee Print. If you are under 18 you must have the permission and accompaniment of an adult.</p>
+
+					<h2 id="PrivacyPolicy">Privacy Policy</h2>
+<p>Tee Prints collects information to provide the goods and services you request and to improve your online shopping experience. The information that we collect is generally the information that you share with us to create an online account or to process your order. This may include your name, email address, telephone number, billing and shipping addresses and payment information.</p> 
+<p>This may also include information you provide us through technology, such as through a cookie placed on your computer when you visit our website. This includes information such as your Internet Protocol (IP) address, the type of device you use, your device operating system and browser type, a unique device identifier, the address of referring websites, the path you take through our website, and other information about your session on our website.</p> 
+<p>Other identifying information you may provide to us includes photos and images that you upload to Tee Prints when creating designs; and tags, posts, comments, reviews, shared images or photos that you provide to Tee Prints. or that you post on social media platforms promoting  Tee Prints products or services.</p>
+					
+
+
+						<h2 id="TermsofUse">Terms of Use</h2>
+<p>Thank you for shopping on Tee Prints. Before you use the Tee Print.com web site, please read the terms and conditions that govern your use of the site. By using and shopping on the Tee Print.com web site, you agree to follow and be bound by these terms.</p>
+<p>Tee Print reserves the right to change the terms and conditions that govern your use of the site, as we deem necessary. By using the site following these changes you agree to follow the rules and regulations set forth by the changes. Tee Prints may add to, delete, change or move any portion of the site including but not limited to content, and equipment or software needed to access Tee Prints. Any changes or modifications to the site are effective immediately upon notice thereof. You, the user, shall be notified of such changes either through an email update or through a notice published on the site. Any use of the site by you after such notice shall be interpreted as acceptance by you of such changes or modifications.</p>
+
+
+
+
+	</div>
+</div>
+	
+	
+</div>
+
+
+
+</div>
+
+</body>
+</html>

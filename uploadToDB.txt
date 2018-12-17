@@ -1,0 +1,29 @@
+<?php
+<html><head></head>
+<?php
+    $status=0;
+	if(isset( $_FILES['fileName']['size'] > 0)
+	{
+		include_once "util/Database.php";
+        $dbh = new Database(1);
+
+        $fp = fopen($tn, 'r');
+        $content = fread($fp, filesize($tn));
+        $content = addslashes($content);
+        fclose($fp);
+       //echo "id: $userId - $useAlias\n";
+        $query = "INSERT INTO files (parent_id, name, size, type, parent_type, user_id, use_alias, content, status, uploaded ) " .
+                    "VALUES ($id, '$fn', '$size', '$type', $parentType ,$userId, $useAlias, '$content', 1,SYSDATE())";
+        //echo $query;
+        $dbh->execute($query);
+
+        $dbh->close();
+        return 1;
+	}
+?>
+    <body>
+        <script type="text/javascript">
+            parent.UploadPic_Callback(<?php echo $status?>);
+        </script>
+    </body>
+</html>
